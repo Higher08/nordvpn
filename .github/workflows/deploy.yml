@@ -1,6 +1,6 @@
 name: deploy
 on:
-  push:
+  push: master
   
 jobs:
   deploy:
