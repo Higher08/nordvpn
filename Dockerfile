@@ -9,7 +9,7 @@ RUN apt-get update -y && \
     curl https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb --output /tmp/nordrepo.deb && \
     apt-get install -y /tmp/nordrepo.deb && \
     apt-get update -y && \
-    apt-get install -y nordvpn${NORDVPN_VERSION:+=$NORDVPN_VERSION} && \
+    apt-get install -y nordvpn && \
     apt-get remove -y nordvpn-release && \
     apt-get autoremove -y && \
     apt-get autoclean -y && \
